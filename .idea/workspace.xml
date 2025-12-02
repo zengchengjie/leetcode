@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7e35c7c-26c0-4b51-a1b8-c90963907c75" name="Default Changelist" comment="两数之和">
+    <list default="true" id="f7e35c7c-26c0-4b51-a1b8-c90963907c75" name="Default Changelist" comment="update README.md position.">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/TowSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/TowSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,15 +52,34 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.27591038" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/leetcode" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/leetcode" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,7 +92,7 @@
       <workItem from="1764573499551" duration="1091000" />
       <workItem from="1764574696448" duration="382000" />
       <workItem from="1764575099877" duration="7002000" />
-      <workItem from="1764659799576" duration="340000" />
+      <workItem from="1764659799576" duration="2663000" />
     </task>
     <task id="LOCAL-00001" summary="提交题型总结">
       <created>1764575882366</created>
@@ -94,7 +115,28 @@
       <option name="project" value="LOCAL" />
       <updated>1764659982751</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="两数之和：补充时间复杂度和空间复杂度&#10;Sum of two numbers: Supplementary time complexity and space complexity">
+      <created>1764660286289</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764660286289</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update README.md name">
+      <created>1764660397838</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764660397838</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update README.md position.">
+      <created>1764660485767</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764660485767</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +157,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交题型总结" />
     <MESSAGE value="两数之和" />
-    <option name="LAST_COMMIT_MESSAGE" value="两数之和" />
+    <MESSAGE value="两数之和：补充时间复杂度和空间复杂度&#10;Sum of two numbers: Supplementary time complexity and space complexity" />
+    <MESSAGE value="update README.md name" />
+    <MESSAGE value="update README.md position." />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md position." />
   </component>
 </project>
