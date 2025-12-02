@@ -19,6 +19,7 @@ class TowSum {
 
         // 建立k-v ，一一对应的哈希表
         //目标：找到当前数的下标和当前数的补数的下标，就是目标的下标值
+        //时间复杂度O(n)空间复杂度 O (n)
         HashMap<Integer,Integer> hash = new HashMap<Integer,Integer>();
         for(int i = 0; i < nums.length; i++){
             if(hash.containsKey(nums[i])){
@@ -29,7 +30,8 @@ class TowSum {
             // 将数据存入 key为补数 ，value为下标
             hash.put(target-nums[i],i);
         }
-        // // 双重循环 循环极限为(n^2-n)/2 
+        // 暴力枚举（最基础，效率最低）双重循环 循环极限为(n^2-n)/2
+        // 时间复杂度 O (n²)，空间复杂度 O (1)；
         // for(int i = 0; i < nums.length; i++){
         //     for(int j = nums.length - 1; j > i; j --){
         //         if(nums[i]+nums[j] == target){
