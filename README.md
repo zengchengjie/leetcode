@@ -1,6 +1,291 @@
 # LeetCode Hot 100 题型总结
 
-LeetCode Hot 100是LeetCode上最受欢迎的100道题目，涵盖了各种常见的算法和数据结构问题。以下是这些题目的分类总结及解题思路。
+LeetCode Hot 100是LeetCode上最受欢迎的100道题目，涵盖了各种常见的算法和数据结构问题。本项目提供了部分题目的实现，并按照题目类型进行了分类，方便学习和复习。目前共实现了20道代表性题目，涵盖了各种常见算法和数据结构问题。
+
+## 项目结构
+
+本项目按照题目类型进行了分类，每个类型下包含相关的题目实现。以下是项目的目录结构：
+
+```
+leetcode/
+├── README.md
+└── src/
+    ├── array/                 # 数组类问题
+    │   ├── twopointer/        # 双指针技巧
+    │   ├── slidingwindow/     # 滑动窗口
+    │   └── subarray/          # 子数组问题
+    ├── linkedlist/           # 链表类问题
+    │   ├── basic/             # 基本操作
+    │   ├── cycle/             # 环形链表
+    │   └── random/            # 随机访问
+    ├── tree/                 # 树类问题
+    │   ├── traversal/         # 二叉树遍历
+    │   ├── bst/               # 二叉搜索树
+    │   └── properties/        # 二叉树属性
+    ├── dp/                   # 动态规划
+    │   ├── path/              # 路径问题
+    │   ├── knapsack/          # 背包问题
+    │   └── sequence/          # 序列问题
+    ├── backtrack/            # 回溯算法
+    │   ├── combination/       # 组合问题
+    │   ├── permutation/       # 排列问题
+    │   └── board/             # 棋盘问题
+    ├── graph/                # 图论问题
+    │   ├── topology/          # 拓扑排序
+    │   ├── shortestpath/      # 最短路径
+    │   └── connectivity/      # 连通性
+    ├── string/               # 字符串问题
+    │   ├── matching/          # 字符串匹配
+    │   ├── transform/         # 字符串变换
+    │   └── decoding/          # 字符串解码
+    ├── datastructure/        # 高级数据结构
+    │   ├── trie/              # 前缀树
+    │   ├── unionfind/         # 并查集
+    │   └── heap/              # 堆
+    ├── bit/                  # 位运算
+    │   ├── basic/             # 基本操作
+    │   └── statecompress/     # 状态压缩
+    └── math/                 # 数学问题
+        ├── numbertheory/       # 数论
+        └── geometry/          # 计算几何
+```
+
+## 命名规范
+
+1. **类名**：`LeetCode[题号]`，如 `LeetCode1`、`LeetCode3`、`LeetCode62` 等
+2. **方法名**：使用题目名称的驼峰式命名，如 `twoSum()`、`lengthOfLongestSubstring()` 等
+3. **包名**：小写，如 `array.twopointer`、`dp.path` 等
+
+## 代码特点
+
+1. **详细的注释**：每个类和方法都有详细的JavaDoc注释，包括题目描述、时间复杂度和空间复杂度分析
+2. **多种解法**：对于每道题，尽可能提供多种解法，并分析其优缺点
+3. **清晰的变量命名**：使用有意义的变量名，提高代码可读性
+4. **辅助方法**：提供辅助方法如 `createLinkedList`、`printLinkedList` 等，方便测试和调试
+
+## 使用建议
+
+1. 按照题目类型逐个攻克，先掌握基础题型，再挑战复杂题型
+2. 每道题至少实现一种解法，并理解其时间复杂度和空间复杂度
+3. 尝试多种解法，比较它们的优缺点
+4. 定期复习已做题目，巩固记忆
+
+## 如何运行
+
+本项目使用Java实现，可以使用任何Java IDE（如IntelliJ IDEA、Eclipse等）打开项目。每个题目都是一个独立的类，可以直接运行其中的方法进行测试。
+
+## 进度跟踪
+
+目前已实现 23/100 道题目 (23%)
+
+[![进度条](https://progress-bar.dev/23/?title=完成进度)](https://progress-bar.dev/23/?title=完成进度)
+
+## 已实现的题目
+
+### 数组类问题
+
+#### 双指针技巧
+- [LeetCode 1. 两数之和](src/array/twopointer/LeetCode1.java)
+- [LeetCode 15. 三数之和](src/array/twopointer/LeetCode15.java)
+- [LeetCode 42. 接雨水](src/array/twopointer/LeetCode42.java)
+- [LeetCode 283. 移动零](src/array/twopointer/LeetCode283.java)
+
+#### 滑动窗口
+- [LeetCode 3. 无重复字符的最长子串](src/array/slidingwindow/LeetCode3.java)
+- [LeetCode 76. 最小覆盖子串](src/array/slidingwindow/LeetCode76.java)
+
+#### 子数组问题
+- [LeetCode 53. 最大子数组和](src/array/subarray/LeetCode53.java)
+- [LeetCode 128. 最长连续序列](src/array/subarray/LeetCode128.java)
+
+### 链表类问题
+
+#### 基本操作
+- [LeetCode 2. 两数相加](src/linkedlist/basic/LeetCode2.java)
+- [LeetCode 19. 删除链表的倒数第N个节点](src/linkedlist/basic/LeetCode19.java)
+
+#### 环形链表
+- [LeetCode 141. 环形链表](src/linkedlist/cycle/LeetCode141.java)
+- [LeetCode 142. 环形链表II](src/linkedlist/cycle/LeetCode142.java)
+
+### 树类问题
+
+#### 二叉树遍历
+- [LeetCode 94. 二叉树的中序遍历](src/tree/traversal/LeetCode94.java)
+- [LeetCode 102. 二叉树的层序遍历](src/tree/traversal/LeetCode102.java)
+
+#### 二叉搜索树
+- [LeetCode 98. 验证二叉搜索树](src/tree/bst/LeetCode98.java)
+
+#### 二叉树属性
+- [LeetCode 104. 二叉树的最大深度](src/tree/properties/LeetCode104.java)
+
+### 动态规划
+
+#### 路径问题
+- [LeetCode 62. 不同路径](src/dp/path/LeetCode62.java)
+
+#### 背包问题
+- [LeetCode 322. 零钱兑换](src/dp/knapsack/LeetCode322.java)
+
+#### 序列问题
+- [LeetCode 300. 最长递增子序列](src/dp/sequence/LeetCode300.java)
+
+### 回溯算法
+
+#### 组合问题
+- [LeetCode 39. 组合总和](src/backtrack/combination/LeetCode39.java)
+- [LeetCode 77. 组合](src/backtrack/combination/LeetCode77.java)
+
+#### 排列问题
+- [LeetCode 46. 全排列](src/backtrack/permutation/LeetCode46.java)
+- [LeetCode 49. 字母异位词分组](src/backtrack/permutation/LeetCode49.java)
+
+#### 棋盘问题
+- [LeetCode 51. N皇后](src/backtrack/board/LeetCode51.java)
+
+### 图论问题
+
+#### 拓扑排序
+- [LeetCode 207. 课程表](src/graph/topology/LeetCode207.java)
+
+### 字符串问题
+
+#### 字符串匹配
+- [LeetCode 28. 实现strStr()](src/string/matching/LeetCode28.java)
+
+### 高级数据结构
+
+#### 前缀树
+- [LeetCode 208. 实现Trie(前缀树)](src/datastructure/trie/LeetCode208.java)
+
+### 位运算
+
+#### 基本操作
+- [LeetCode 136. 只出现一次的数字](src/bit/basic/LeetCode136.java)
+
+## 待实现的题目
+
+### 数组类问题
+
+#### 双指针技巧
+- [ ] LeetCode 11. 盛最多水的容器
+- [x] LeetCode 283. 移动零
+- [ ] LeetCode 26. 删除有序数组中的重复项
+- [ ] LeetCode 75. 颜色分类
+
+#### 滑动窗口
+- [ ] LeetCode 438. 找到字符串中所有字母异位词
+- [ ] LeetCode 567. 字符串的排列
+
+#### 子数组问题
+- [x] LeetCode 128. 最长连续序列
+- [ ] LeetCode 152. 乘积最大子数组
+
+### 链表类问题
+
+#### 基本操作
+- [ ] LeetCode 21. 合并两个有序链表
+- [ ] LeetCode 23. 合并K个升序链表
+
+#### 环形链表
+- [ ] LeetCode 138. 复制带随机指针的链表
+
+#### 随机访问
+- [ ] LeetCode 382. 链表随机节点
+
+### 树类问题
+
+#### 二叉树遍历
+- [ ] LeetCode 144. 二叉树的前序遍历
+- [ ] LeetCode 145. 二叉树的后序遍历
+
+#### 二叉搜索树
+- [ ] LeetCode 230. 二叉搜索树中第K小的元素
+
+#### 二叉树属性
+- [ ] LeetCode 226. 翻转二叉树
+- [ ] LeetCode 236. 二叉树的最近公共祖先
+- [ ] LeetCode 543. 二叉树的直径
+
+### 动态规划
+
+#### 路径问题
+- [ ] LeetCode 63. 不同路径 II
+- [ ] LeetCode 64. 最小路径和
+
+#### 背包问题
+- [ ] LeetCode 416. 分割等和子集
+
+#### 序列问题
+- [ ] LeetCode 72. 编辑距离
+- [ ] LeetCode 1143. 最长公共子序列
+
+### 回溯算法
+
+#### 组合问题
+- [ ] LeetCode 40. 组合总和 II
+- [ ] LeetCode 216. 组合总和 III
+- [ ] LeetCode 78. 子集
+
+#### 排列问题
+- [ ] LeetCode 47. 全排列 II
+- [x] LeetCode 49. 字母异位词分组
+
+#### 棋盘问题
+- [ ] LeetCode 37. 解数独
+
+### 图论问题
+
+#### 拓扑排序
+- [ ] LeetCode 210. 课程表 II
+
+#### 最短路径
+- [ ] LeetCode 743. 网络延迟时间
+
+#### 连通性
+- [ ] LeetCode 200. 岛屿数量
+- [ ] LeetCode 547. 省份数量
+- [ ] LeetCode 695. 岛屿的最大面积
+
+### 字符串问题
+
+#### 字符串匹配
+- [ ] LeetCode 459. 重复的子字符串
+
+#### 字符串变换
+- [ ] LeetCode 5. 最长回文子串
+- [ ] LeetCode 151. 翻转字符串中的单词
+
+#### 字符串解码
+- [ ] LeetCode 91. 解码方法
+
+### 高级数据结构
+
+#### 并查集
+- [ ] LeetCode 547. 省份数量
+- [ ] LeetCode 684. 冗余连接
+
+#### 堆
+- [ ] LeetCode 347. 前 K 个高频元素
+- [ ] LeetCode 703. 数据流中的第 K 大元素
+
+### 位运算
+
+#### 基本操作
+- [ ] LeetCode 191. 比特位计数
+- [ ] LeetCode 338. 比特位计数
+
+#### 状态压缩
+- [ ] LeetCode 78. 子集
+
+### 数学问题
+
+#### 数论
+- [ ] LeetCode 204. 计数质数
+
+#### 计算几何
+- [ ] LeetCode 447. 回旋镖的数量
 
 ## 一、数组类问题
 
@@ -213,3 +498,38 @@ LeetCode Hot 100是LeetCode上最受欢迎的100道题目，涵盖了各种常�
 5. **模拟面试**：练习在压力下快速解题
 
 通过系统性地刷题和总结，可以逐步提高算法能力和编程水平，在面试中表现出色。
+
+## 贡献指南
+
+欢迎对本项目做出贡献！如果你有更好的解法、发现了bug或者有任何改进建议，请随时提交Issue或Pull Request。
+
+### 提交新题目
+
+如果你想添加新的题目实现，请遵循以下规范：
+1. 将代码放在对应的包目录下
+2. 类名格式为 `LeetCode[题号]`
+3. 提供详细的JavaDoc注释，包括题目描述、时间复杂度和空间复杂度分析
+4. 尽可能提供多种解法，并分析其优缺点
+5. 提供必要的辅助方法，如 `createLinkedList`、`printLinkedList` 等
+
+### 代码风格
+
+请遵循以下代码风格：
+1. 使用有意义的变量名和方法名
+2. 适当添加注释，解释关键逻辑
+3. 保持代码整洁，避免冗余
+4. 遵循Java编码规范
+
+## 许可证
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
+
+## 联系方式
+
+如果你有任何问题或建议，可以通过以下方式联系我：
+- 邮箱：your-email@example.com
+- GitHub：[你的GitHub用户名](https://github.com/your-username)
+
+## 致谢
+
+感谢所有为本项目做出贡献的开发者，以及LeetCode社区提供的优质题目。
